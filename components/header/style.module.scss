@@ -1,0 +1,37 @@
+.header_page {
+  padding: 0 30px;
+  height: auto;
+  display: block;
+  position: fixed;
+  width: 100%;
+  transition: all 0.3s;
+  background-color: #fff;
+  .nav_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.3s;
+    .navbar_collapse {
+      .navbar_nav {
+        display: flex;
+        list-style: none;
+      }
+      .item {
+        margin-left: 30px;
+        font-size: 0.9em;
+        position: relative;
+        &:hover {
+          color: #2196f3;
+          a {
+            border-bottom: 1px solid;
+          }
+        }
+      }
+    }
+  }
+  .logo {
+    h1 {
+      font-size: 2em;
+    }
+  }
+}

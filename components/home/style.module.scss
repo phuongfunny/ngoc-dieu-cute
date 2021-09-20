@@ -1,0 +1,26 @@
+#home_banner {
+  width: 100%;
+  .container {
+    width: 100%;
+    height: 900px;
+    background: url("../../public/images/background.jpg") no-repeat center
+      bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+  }
+  h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 800;
+    font-family: inherit;
+  }
+  p {
+    font-size: 2em;
+    margin: 0 0 10px 0;
+  }
+}
