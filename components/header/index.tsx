@@ -16,47 +16,51 @@ function Header() {
     window.addEventListener("scroll", listenScrollEvent);
     return () => window.removeEventListener("scroll", listenScrollEvent);
   }, []);
-  console.log(scroll);
   return (
     <>
-      {scroll && (
-        <header className={Style.header_page}>
-          <nav className={Style.nav_container}>
-            <div className={Style.logo}>
-              <h1>NGỌC DIỆU</h1>
-            </div>
-            <div className={Style.navbar_collapse}>
-              <ul className={Style.navbar_nav}>
-                <li className={Style.item}>
-                  <Link href="/">
-                    <a>HOME</a>
-                  </Link>
-                </li>
-                <li className={Style.item}>
-                  <Link href="/">
-                    <a>ABOUT</a>
-                  </Link>
-                </li>
-                <li className={Style.item}>
-                  <Link href="/">
-                    <a>SERVICES</a>
-                  </Link>
-                </li>
-                <li className={Style.item}>
-                  <Link href="/">
-                    <a>PORTFOLIO</a>
-                  </Link>
-                </li>
-                <li className={Style.item}>
-                  <Link href="/">
-                    <a>CONTACT</a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
-      )}
+      <header
+        className={Style.header_page}
+        style={
+          scroll
+            ? { display: "block" }
+            : { display: "none", position: "static" }
+        }
+      >
+        <nav className={Style.nav_container}>
+          <div className={Style.logo}>
+            <h1>NGỌC DIỆU</h1>
+          </div>
+          <div className={Style.navbar_collapse}>
+            <ul className={Style.navbar_nav}>
+              <li className={Style.item}>
+                <Link href="/">
+                  <a>HOME</a>
+                </Link>
+              </li>
+              <li className={Style.item}>
+                <Link href="/">
+                  <a>ABOUT</a>
+                </Link>
+              </li>
+              <li className={Style.item}>
+                <Link href="/">
+                  <a>SERVICES</a>
+                </Link>
+              </li>
+              <li className={Style.item}>
+                <Link href="/">
+                  <a>PORTFOLIO</a>
+                </Link>
+              </li>
+              <li className={Style.item}>
+                <Link href="/">
+                  <a>CONTACT</a>
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
     </>
   );
 }
