@@ -1,10 +1,10 @@
 .header_page {
-  padding: 0 30px;
+  padding: 20px;
   display: block;
   position: fixed;
   width: 100%;
-  transition: top 0.5s linear;
   background-color: #fff;
+  z-index: 100;
   .nav_container {
     display: flex;
     align-items: center;
@@ -17,13 +17,17 @@
       }
       .item {
         margin-left: 30px;
-        font-size: 0.9em;
+
         position: relative;
         &:hover {
           color: #2196f3;
           a {
             border-bottom: 1px solid;
           }
+        }
+        a {
+          color: #000;
+          font-size: 0.9em;
         }
       }
     }
@@ -32,6 +36,7 @@
     h1 {
       font-size: 2em;
       font-family: fangsong;
+      font-weight: 600;
     }
   }
 }

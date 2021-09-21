@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
-import Footer from "../footer/footer";
-import Style from "./style.module.scss";
 import Link from "next/link";
+import React, { useEffect, useState } from "react";
+import Style from "./style.module.scss";
 
 function Header() {
   const [scroll, setScroll] = useState(false);
@@ -22,8 +21,10 @@ function Header() {
         className={Style.header_page}
         style={
           scroll
-            ? { display: "block" }
-            : { display: "none", position: "static" }
+            ? {
+                display: "block",
+              }
+            : { display: "none" }
         }
       >
         <nav className={Style.nav_container}>
@@ -34,27 +35,27 @@ function Header() {
             <ul className={Style.navbar_nav}>
               <li className={Style.item}>
                 <Link href="#home_banner">
-                  <a>HOME</a>
+                  <a>Cute</a>
+                </Link>
+              </li>
+              <li className={Style.item}>
+                <Link href="/#footer">
+                  <a>Thông Tin</a>
                 </Link>
               </li>
               <li className={Style.item}>
                 <Link href="/">
-                  <a>ABOUT</a>
+                  <a>Công Việc</a>
                 </Link>
               </li>
               <li className={Style.item}>
                 <Link href="/">
-                  <a>SERVICES</a>
+                  <a>Hình Ảnh</a>
                 </Link>
               </li>
               <li className={Style.item}>
                 <Link href="/">
-                  <a>PORTFOLIO</a>
-                </Link>
-              </li>
-              <li className={Style.item}>
-                <Link href="/">
-                  <a>CONTACT</a>
+                  <a>Liên Hệ</a>
                 </Link>
               </li>
             </ul>
