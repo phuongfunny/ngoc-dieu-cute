@@ -15,7 +15,7 @@ import Avatar from "../../public/images/avatar.jpg";
 function Profile() {
   return (
     <>
-      <section id={Style.profile}>
+      <section className={Style.profile} id="profile">
         <div className="container">
           <Row>
             <Col span={24} className={Style.title}>
@@ -24,7 +24,10 @@ function Profile() {
             </Col>
           </Row>
           <Row className={Style.content}>
-            <Col span={8}>
+            <Col
+              span={8}
+              className={`${Style.col_profile} ${Style.content_item}`}
+            >
               <h2>Ngọc Diệu</h2>
               <p style={{ color: "#565353", fontSize: "1.1em" }}>
                 Xin chào mọi người! Mình giới thiệu một ít về mình nè... Mình là
@@ -61,7 +64,10 @@ function Profile() {
                 <span className={Style.sub_title}>Đại Học Quy Nhơn</span>
               </h5>
             </Col>
-            <Col span={8} className={Style.col_avatar}>
+            <Col
+              span={8}
+              className={`${Style.col_avatar} ${Style.content_item}`}
+            >
               <div className={Style.avatar}>
                 <Image
                   src={Avatar}
@@ -71,7 +77,10 @@ function Profile() {
                 />
               </div>
             </Col>
-            <Col span={8} className={Style.col_skill}>
+            <Col
+              span={8}
+              className={`${Style.col_skill} ${Style.content_item}`}
+            >
               <div className={Style.professional}>
                 <h2>Kĩ Năng Professional hihi</h2>
                 <p style={{ color: "#565353", fontSize: "1.1em" }}>

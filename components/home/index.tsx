@@ -13,7 +13,7 @@ import Style from "./style.module.scss";
 function HomeBanner() {
   return (
     <>
-      <section id={Style.home_banner}>
+      <section className={Style.home_banner} id="home_banner">
         <div className={Style.container}>
           <p>Hi all, Tớ là</p>
           <h1>TRẦN THỊ NGỌC DIỆU</h1>
