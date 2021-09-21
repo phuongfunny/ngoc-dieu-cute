@@ -33,7 +33,7 @@ function Header() {
           <div className={Style.navbar_collapse}>
             <ul className={Style.navbar_nav}>
               <li className={Style.item}>
-                <Link href="/">
+                <Link href="#home_banner">
                   <a>HOME</a>
                 </Link>
               </li>

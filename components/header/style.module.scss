@@ -3,13 +3,13 @@
   display: block;
   position: fixed;
   width: 100%;
-  transition: all 0.3s;
+  transition: top 0.5s linear;
   background-color: #fff;
   .nav_container {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    transition: all 0.3s;
+    transition: bottom 0.5s linear;
     .navbar_collapse {
       .navbar_nav {
         display: flex;
@@ -31,6 +31,7 @@
   .logo {
     h1 {
       font-size: 2em;
+      font-family: fangsong;
     }
   }
 }

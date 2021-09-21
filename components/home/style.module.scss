@@ -1,5 +1,6 @@
 #home_banner {
   width: 100%;
+  font-family: Raleway;
   .container {
     width: 100%;
     height: 900px;
@@ -12,6 +13,39 @@
     justify-content: center;
     flex-direction: column;
     color: #fff;
+    .animation_profile {
+      display: flex;
+      align-items: baseline;
+      margin-top: 30px;
+      min-height: 68px;
+      span {
+        font-size: 2em;
+        margin-right: 10px;
+        color: #ffffffab;
+      }
+      p {
+        font-weight: 600;
+        color: #fff;
+      }
+    }
+    .icon_link {
+      width: 50%;
+      ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        li {
+          margin-right: 10px;
+          line-height: 30px;
+        }
+        svg {
+          width: 35px;
+        }
+      }
+    }
   }
   h1 {
     margin: 0;
@@ -22,5 +56,6 @@
   p {
     font-size: 2em;
     margin: 0 0 10px 0;
+    color: #ffffffab;
   }
 }
